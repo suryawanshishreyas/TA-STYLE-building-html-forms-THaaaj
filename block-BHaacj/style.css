@@ -1,0 +1,287 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*custom styles*/
+body{
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #E6E6E6;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+}
+.center{
+    align-items: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+.flex-row{
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.container1{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+/*header*/
+header{
+    background-color: white;
+    padding: 25px 0;
+}
+h1{
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+header ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    font-weight: 600;
+    padding-left: 20px;
+}
+.highlight a{
+    color: #69C6BA;
+}
+/*section1*/
+.section1{
+    background: linear-gradient(rgba(26, 19, 19,0.8),rgba(26, 19, 19,0.8)),url(assets/banner.jpg)   no-repeat;
+    background-size: cover;
+    padding-bottom: 60px;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 700;
+    color:white;
+    padding-top: 80px;
+}
+h2, .circles{
+    text-align: center;
+}
+.circle1{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: white;
+    margin-bottom: 10px;
+    
+}
+.tag-line{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+.circle2{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    margin-bottom: 10px;
+}
+.down-arrow {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 90px;
+}
+.down-arrow .fas{
+    color:#69C6BA ;
+}
+select,input{
+    display: block;
+    width: 100%;
+}
+form{
+    width: 740px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+/*section2*/
+.section2{
+    text-align: center;
+    background-color: #EFEFEF;
+    padding: 30px;
+}
+h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.section2 strong{
+    font-weight: 700;
+}
+.section2 button,.section7 button{
+    background-color: #69C6BA;
+    padding: 10px;
+    color: white;
+   border: 0;
+   margin-top: 20px;
+}
+/*section3*/
+.location{
+    background-color: #69C6BA;
+    padding: 30px 20px;
+    color: white;
+}
+h4{
+    font-size: 30px;
+}
+.parent{
+    position: relative;
+    background-color: white;
+}
+.child{
+    position: absolute;
+   width: 50%;
+   left: 43%;
+   top: 30%;
+  
+}
+.child button{
+    padding: 10px;
+    background-color: white;
+    color: #69C6BA;
+    box-shadow: 0;
+    border: 0;
+    margin-top: 10px;
+}
+.icon{
+    font-size: 30px;
+    background-color: rgba(131,124,115,0.8);
+    padding: 10px;
+}
+.icon-r{
+    margin-right: 4px;
+}
+.icon .fas{
+    color: #DDDBD9;
+}
+/**/
+.section4 .child{
+    left: 10%;
+    z-index: 1;
+}
+.section4 {
+    text-align:end;
+}
+.section4 img{
+    position: relative;
+    z-index: 0;
+    right: -46%;
+}
+.maps{
+    background-color: #69C6BA;
+}
+.asia{
+    background-color: #C66995;
+}
+.mini-map{
+    padding: 20px;
+    color: white;
+}
+/*section7*/
+.section7{
+    background-color: white;
+    padding-top: 30px;
+}
+.right{
+    background-color: #69C6BA;
+    height: 150px;
+    color: white;
+}
+.navigation{
+    height: 150px;
+    margin: 20px 0;
+}
+.navigation img{
+    height: 150px;
+}
+.navigation .red{
+    color: #C66995;
+}
+.middle{
+    padding: 10px;
+}
+.sec7-btn{
+    text-align: center;
+}
+/*section8*/
+iframe{
+    width: 100%;
+}
+.section8{
+    position:relative;
+}
+textarea{
+    display: block;
+    width: 100%;
+}
+.section8 form{
+    width: 500px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+/*footer*/
+footer{
+    background-color:#69C6BA ;
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+}
